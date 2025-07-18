@@ -1,0 +1,66 @@
+🚀 Starting Flowbit System with Mock Database (for demo purposes)...
+📋 Cleaning up existing processes...
+⚠️  Starting with mock database - some features may be limited
+📝 For full functionality, start Docker Desktop and use ./start-dev.sh
+🎯 Starting services...
+🔐 Starting auth service on port 3001...
+🚀 Starting API service on port 3002...
+🎫 Starting support tickets app on port 3003...
+⚛️ Starting React shell on port 3000...
+✅ All services started!
+
+🌐 Application URLs:
+- Main App: http://localhost:3000
+- Auth Service: http://localhost:3001
+- API Service: http://localhost:3002
+- Support Tickets: http://localhost:3003
+
+📖 Demo accounts (password: 'password'):
+- Admin Tenant A: admin@tenant-a.com
+- Admin Tenant B: admin@tenant-b.com
+
+⚠️  Note: Using mock database - data won't persist between restarts
+💡 For full functionality with MongoDB and n8n:
+   1. Start Docker Desktop
+   2. Run: ./start-dev.sh
+
+🔄 To stop all services, run: ./stop-dev.sh
+
+⌨️  Press Ctrl+C to stop all services
+
+> flowbit-api@1.0.0 start:mock
+> MOCK_DATABASE=true node server-mock.js
+
+
+> flowbit-auth-service@1.0.0 start:mock
+> MOCK_DATABASE=true node server-mock.js
+
+
+> support-tickets-app@1.0.0 dev
+> vite
+
+
+> flowbit-react-shell@1.0.0 dev
+> vite
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+  VITE v5.4.19  ready in 437 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.99.69:3000/
+
+  VITE v5.4.19  ready in 439 ms
+
+  ➜  Local:   http://localhost:3003/
+  ➜  Network: http://192.168.99.69:3003/
+🎭 Using mock database for demonstration
+Auth service running on port 3001 (mock database)
+🎭 Using mock database for demonstration
+API service running on port 3002 (mock database)
+3:09:35 PM [vite] hmr update /src/components/Dashboard.jsx
+3:09:52 PM [vite] hmr update /src/App.css
+3:10:00 PM [vite] hmr update /src/App.css
+./start-dev-mock.sh: line 114: 11706 Terminated: 15          npm run start:mock  (wd: ~/flowbit-system/auth-service)
+./start-dev-mock.sh: line 114: 11707 Terminated: 15          npm run start:mock  (wd: ~/flowbit-system/api)

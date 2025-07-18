@@ -1,0 +1,35 @@
+{
+  "useCases": {
+    "tenant-a": [
+      {
+        "id": "support-tickets",
+        "name": "Support Tickets",
+        "description": "Manage customer support tickets",
+        "screenUrl": "http://localhost:3003",
+        "moduleUrl": "http://localhost:3003/remoteEntry.js",
+        "scope": "supportTickets",
+        "module": "./SupportTicketsApp"
+      },
+      {
+        "id": "admin-dashboard",
+        "name": "Admin Dashboard",
+        "description": "Administrative dashboard for tenant management",
+        "screenUrl": "http://localhost:3004",
+        "moduleUrl": "http://localhost:3004/remoteEntry.js",
+        "scope": "adminDashboard",
+        "module": "./AdminDashboard"
+      }
+    ],
+    "tenant-b": [
+      {
+        "id": "support-tickets",
+        "name": "Support Tickets",
+        "description": "Manage customer support tickets",
+        "screenUrl": "http://localhost:3003",
+        "moduleUrl": "http://localhost:3003/remoteEntry.js",
+        "scope": "supportTickets",
+        "module": "./SupportTicketsApp"
+      }
+    ]
+  }
+}
